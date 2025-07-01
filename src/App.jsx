@@ -2,7 +2,7 @@
 import {createHashRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 // import Layout from './components/Layout/Layout';
-import Home from './components/Home/Home';
+// import Home from './components/Home/Home';
 import Shop from './components/Shop/Shop';
 import MeatsSeafood from './components/MeatsSeafood/MeatsSeafood';
 import Bakery from './components/Bakery/Bakery';
@@ -17,7 +17,8 @@ import HomeTwo from './components/HomeTwo/HomeTwo';
 import HomeThree from './components/HomeThree/HomeThree';
 import HomeFor from './components/HomeFor/HomeFor';
 import AboutUs from './components/AboutUs/AboutUs';
-import Layout from './Components/Layout/Layout';
+import Layout from './components/Layout/Layout';
+import Home from './components/Home/Home';
 
 function App() {
   // const [count, setCount] = useState(0)
