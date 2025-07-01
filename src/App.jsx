@@ -17,7 +17,7 @@ import HomeTwo from './components/HomeTwo/HomeTwo';
 import HomeThree from './components/HomeThree/HomeThree';
 import HomeFor from './components/HomeFor/HomeFor';
 import AboutUs from './components/AboutUs/AboutUs';
-import Layout from './components/Layout/Layout';
+import Layout from './Components/Layout/Layout';
 
 function App() {
   // const [count, setCount] = useState(0)

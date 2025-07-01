@@ -3,10 +3,10 @@ import React, {useEffect , useState} from 'react'
 import Style from './Layout.module.css';
 import Navbar from '../Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
-import Footer from '../Footer/Footer';
-import NavColor from '../NavColor/NavColor';
-import NavAbout from '../NavAbout/NavAbout';
-import NavBasket from '../NavBasket/NavBasket';
+import Footer from './../Footer/Footer';
+import NavColor from './../NavColor/NavColor';
+import NavAbout from './../NavAbout/NavAbout';
+import NavBasket from './../NavBasket/NavBasket';
 
 
 export default function Layout() {
