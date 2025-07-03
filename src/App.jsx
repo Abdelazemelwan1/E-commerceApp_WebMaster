@@ -20,6 +20,7 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import Layout from './Components/Layout/Layout';
 import Home from './Components/Home/Home';
 import MeatsSeaFood from './Components/MeatsSeaFood/MeatsSeaFood';
+import Checkout from './Components/Checkout/Checkout';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -44,6 +45,7 @@ let router = createHashRouter([
       { path: "Login", element: <Login /> },
       { path: "Register", element: <Register /> },
       { path: "*", element: <NotFoundPage /> },
+      { path:"Checkout", element: <Checkout/>},
     ],
   },
 ])

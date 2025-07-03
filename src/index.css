@@ -3,6 +3,8 @@
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 @custom-variant dark (&:where(.dark, .dark *));
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 .active{
     background-color: #F0FAFF;

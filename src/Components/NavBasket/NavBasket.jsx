@@ -34,10 +34,13 @@ export default function NavBasket() {
             <div className='w-[30px] h-[30px]  flex items-center justify-center rounded-full border-1 border-[#E2E4EC]'><CiUser /></div>
             <div className='flex items-center gap-4 '>
               <p className='text-[#3E445A]'>$0.00</p>
+              <Link to={'Checkout'}>
               <div className='relative w-[30px] h-[30px]  flex items-center justify-center rounded-full border-1 border-[#E2E4EC]'>
+                
                 <img src={bay} alt="" />
                 <span className='absolute translate-y-[-50%] top-0 end-[-40%] bg-amber-600 rounded-full px-1.5'>0</span>
               </div>
+              </Link>
             </div>
           </div>
         
