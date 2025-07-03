@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.active{
+    background-color: #F0FAFF;
+    color: #35AFA0;
+    padding-inline: 10px;
+    padding-block: 8px;
+    /* background-image: url(../src/assets/about-header.jpg.svg); */
+    /* background-image: linear-gradient(#00000066,#00000066), url(../src/assets/about-header.jpg.svg); */
+}
