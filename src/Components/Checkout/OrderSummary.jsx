@@ -27,12 +27,12 @@ export default function OrderSummary({ products }) {
         ))}
 
         {/* Total Summary */}
-        <div className="border-t pt-4 text-sm space-y-1">
+        <div className="border-t border-gray-400 pt-4 text-sm space-y-1">
           <div className="flex justify-between text-gray-600">
             <span>Subtotal ({products.length} items)</span>
             <span>
               $
-              {products.reduce((sum, p) => sum + p.price, 0).toFixed(2)}
+              {products.reduce((sum, p) => sum + p.price * p.quantity, 0).toFixed(2)}
             </span>
           </div>
           <div className="flex justify-between text-gray-600">
@@ -41,7 +41,7 @@ export default function OrderSummary({ products }) {
           </div>
           <div className="flex justify-between font-bold text-lg pt-2">
             <span>Total</span>
-            <span>${products.reduce((sum, p) => sum + p.price, 0).toFixed(2)}</span>
+            <span>${products.reduce((sum, p) => sum + p.price * p.quantity, 0).toFixed(2)}</span>
           </div>
           <p className="text-xs text-left text-gray-400">Including taxes</p>
         </div>

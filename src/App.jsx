@@ -20,7 +20,9 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import Layout from './Components/Layout/Layout';
 import Home from './Components/Home/Home';
 import MeatsSeaFood from './Components/MeatsSeaFood/MeatsSeaFood';
+import CartPage from './Components/Cart/Cart';
 import Checkout from './Components/Checkout/Checkout';
+import ThankYou from './Components/Checkout/ThankYou';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -43,9 +45,11 @@ let router = createHashRouter([
       { path: "Blog", element: <Blog /> },
       { path: "Contact", element: <Contact /> },
       { path: "Login", element: <Login /> },
+      { path: "cart", element: <CartPage /> },
+      { path: "Checkout", element: <Checkout />},
+      { path: "Thank-you", element: <ThankYou />},
       { path: "Register", element: <Register /> },
       { path: "*", element: <NotFoundPage /> },
-      { path:"Checkout", element: <Checkout/>},
     ],
   },
 ])

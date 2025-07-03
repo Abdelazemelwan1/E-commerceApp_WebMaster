@@ -20,8 +20,8 @@ export default function PaymentNotice({ onConfirm }) {
         Pay now
       </button>
 
-      <div className="text-xs text-blue-500 text-left py-2 mt-4 cursor-pointer border-t border-gray-400">
-        <a href="#">Privacy policy</a>
+      <div className=" py-2 mt-4 border-t border-gray-400">
+        <a className="text-xs text-blue-500 text-left" href="#">Privacy policy</a>
          </div>
     </div>
   );

@@ -89,7 +89,7 @@ export default function Contact() {
         </div>
 
         <div className="mt-10">
-          <Link type="submit" className="bg-[#35AFA0] hover:bg-[#4e9189]    rounded-[4px] block w-fit  px-3.5 py-2.5 text-center text-sm font-medium text-[#FFFFFF] shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send Message</Link>
+          <Link type="submit" className="bg-[#35AFA0] hover:bg-[#4e9189]    rounded-[4px] block w-fit  px-3.5 py-2.5 text-center text-sm font-medium text-[#FFFFFF] shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send Message</Link>
         </div>
       </form>
     </div>

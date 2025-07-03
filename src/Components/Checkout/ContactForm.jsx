@@ -6,7 +6,7 @@ export default function ContactForm({ formData, handleChange }) {
     <div className="mb-4">
       <div className="flex justify-between items-center mb-2">
         <h2 className="text-xl font-bold">Contact</h2>
-        <Link to="Login" className="text-blue-500 text-sm hover:underline">Login</Link>
+        <Link to="/Login" className="text-blue-500 text-sm hover:underline">Login</Link>
       </div>
       <input
         type="email"
