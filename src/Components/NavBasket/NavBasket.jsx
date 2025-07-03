@@ -8,7 +8,10 @@ import { useCart } from '../../Context/CartContext';
 
 export default function NavBasket() {
   const { cart } = useCart();
-
+  const totalPrice = Object.values(cart).reduce(
+  (acc, item) => acc + item.price * item.quantity,
+  0
+);
   const totalItems = Object.values(cart).reduce((acc, item) => acc + item.quantity, 0);
 
   return (
@@ -50,7 +53,7 @@ export default function NavBasket() {
             </div>
 
             <div className='flex items-center gap-4'>
-              <p className='text-[#3E445A]'>$0.00</p>
+              <p className='text-[#3E445A]'>${totalPrice.toFixed(2)}</p>
 
               <Link to="/cart" className='relative w-[30px] h-[30px] flex items-center justify-center rounded-full border-1 border-[#E2E4EC]'>
                 <img src={bay} alt="Cart" />
