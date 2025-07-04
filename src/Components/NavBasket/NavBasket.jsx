@@ -48,9 +48,9 @@ export default function NavBasket() {
 
           {/* User & Cart */}
           <div className='flex items-center justify-center gap-5'>
-            <div className='w-[30px] h-[30px] flex items-center justify-center rounded-full border-1 border-[#E2E4EC]'>
+            <Link to={'/profile'} className='w-[30px] h-[30px] flex items-center justify-center rounded-full border-1 border-[#E2E4EC]'>
               <CiUser />
-            </div>
+            </Link>
 
             <div className='flex items-center gap-4'>
               <p className='text-[#3E445A]'>${totalPrice.toFixed(2)}</p>
