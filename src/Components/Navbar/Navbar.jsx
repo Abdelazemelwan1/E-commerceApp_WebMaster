@@ -79,7 +79,7 @@ const hideNav = ()=> {
           <NavLink to={"MeatsSeafood"} className=" text-[#3E445A] uppercase text-[15px] font-semibold py-2 px-3 rounded-3xl flex items-center gap-.5" onClick={()=>hideNav()} > <img src={iconFood} alt="" /> Meats & Seafood</NavLink>
         </li>
         <li>
-          <NavLink to={"Bakery"} className=" text-[#3E445A] uppercase text-[15px] font-semibold py-2 px-3 rounded-3xl flex items-center gap-.5" onClick={()=>hideNav()} > <img src={IconBa} alt="" /> Bakery</NavLink>
+          <NavLink to={"Bakery"} className=" text-[#3E445A] uppercase text-[15px] font-semibold py-2 px-3 rounded-3xl flex items-center gap-.5" onClick={()=>hideNav()} > <img src={IconBa} alt="" /> BAkery</NavLink>
         </li>
         <li>
           <NavLink to={"Beverages"} className=" text-[#3E445A] uppercase text-[15px] font-semibold py-2 px-3 rounded-3xl flex items-center gap-.5" onClick={()=>hideNav()} > <img src={IconBev} alt="" /> Beverages</NavLink>
