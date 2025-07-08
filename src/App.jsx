@@ -10,7 +10,6 @@ import Beverages from './Components/Beverages/Beverages';
 import Blog from './Components/Blog/Blog';
 import Contact from './Components/Contact/Contact';
 import Register from './Components/Register/Register';
-import Login from './Components/Login/Login';
 import NotFoundPage from './Components/NotFoundPage/NotFoundPage';
 import HomeOne from './Components/HomeOne/HomeOne';
 import HomeTwo from './Components/HomeTwo/HomeTwo';
@@ -20,6 +19,12 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import Layout from './Components/Layout/Layout';
 import Home from './Components/Home/Home';
 import MeatsSeaFood from './Components/MeatsSeaFood/MeatsSeaFood';
+import CartPage from './Components/Cart/Cart';
+import Checkout from './Components/Checkout/Checkout';
+import ThankYou from './Components/Checkout/ThankYou';
+import { ToastContainer } from 'react-toastify';
+import Login from './pages/Login';
+import Profile from './pages/Profile';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -29,7 +34,8 @@ let router = createHashRouter([
     path: "",
     element: <Layout />,
     children: [
-      { path: "", element: <Home /> },
+      { path: "/", element: <Login/> },
+      { path: "home", element: <Home/> },
       { path: "Homeone", element: <HomeOne /> },
       { path: "HomeTwo", element: <HomeTwo /> },
       { path: "HomeThree", element: <HomeThree /> },
@@ -42,14 +48,19 @@ let router = createHashRouter([
       { path: "Blog", element: <Blog /> },
       { path: "Contact", element: <Contact /> },
       { path: "Login", element: <Login /> },
+      { path: "cart", element: <CartPage /> },
+      { path: "Checkout", element: <Checkout />},
+      { path: "Thank-you", element: <ThankYou />},
       { path: "Register", element: <Register /> },
       { path: "*", element: <NotFoundPage /> },
+      { path: "profile", element: <Profile /> },
     ],
   },
 ])
 
   return (
     <>
+    <ToastContainer position="top-right" autoClose={2000} />
       <RouterProvider router={router}/> 
     </>
   )

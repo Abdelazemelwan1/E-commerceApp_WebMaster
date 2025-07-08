@@ -13,10 +13,7 @@ export default function Blog() {
     UseTitle('Blog');
   return (
       <>
-<h2 className='text-center my-4 text-[#35AFA0] w-fit m-auto p-2 border-transparent border-3 border-b-[#35AFA0] text-4xl'>Blog</h2>  
-<div className='mx-auto pb-5 max-w-[82%] sm:max-w-[36rem] md:max-w-[44rem] lg:max-w-[60rem]  xl:max-w-[74rem]  2xl:max-w-[82rem] container  mt-10'>
-
-        <div className="   flex flex-col md:flex-row gap-6 md:gap-4">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row gap-6 md:gap-4">
       
 
       <div className="blog-content-right w-full md:w-3/4 flex flex-col gap-6">
@@ -142,7 +139,6 @@ export default function Blog() {
           </ul>
         </div>
       </div>
-    </div>
     </div>
     </>
   );

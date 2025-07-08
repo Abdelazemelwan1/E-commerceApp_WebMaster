@@ -18,7 +18,7 @@ const hideNav = ()=> {
   return <>
   
 
-<nav className="bg-[#FFFFFF]  border border-[#E3E4E6]  dark:bg-gray-900 dark:border-gray-700 shadow-lg sticky top-0 z-30">
+<nav className="bg-[#FFFFFF]  border border-[#E3E4E6]  dark:bg-gray-900 dark:border-gray-700 shadow-lg ">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <Link to={""} className="relative flex items-center justify-between rounded-full space-x-3  bg-[#35AFA0] px-2 py-4">
       {/* <h2 > */}

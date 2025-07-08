@@ -3,6 +3,7 @@
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 @custom-variant dark (&:where(.dark, .dark *));
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 
 .active{
     background-color: #F0FAFF;
@@ -11,4 +12,17 @@
     padding-block: 8px;
     /* background-image: url(../src/assets/about-header.jpg.svg); */
     /* background-image: linear-gradient(#00000066,#00000066), url(../src/assets/about-header.jpg.svg); */
+}
+/* .container{
+    width:82%;
+    margin:auto;
+} */
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+button{
+    cursor:pointer;
 }
